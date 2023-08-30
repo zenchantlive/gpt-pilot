@@ -1,8 +1,10 @@
 # main.py
 from __future__ import print_function, unicode_literals
-
+import os
 from dotenv import load_dotenv
 load_dotenv()
+
+api_key = os.getenv('OPENAI_API_KEY')
 
 from helpers.Project import Project
 
